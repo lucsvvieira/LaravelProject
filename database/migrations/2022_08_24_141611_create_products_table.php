@@ -26,6 +26,11 @@ return new class extends Migration
             // Quantidade do produto - int - por default quantidade = 0 (quantity)
             $table->integer('quantity')->default(0);
 
+            // Observações sobre o produto - text - pode ser nulo (obs)
+            $table->text('obs')->nullable();
+
+            // Adicionar o campo quantidade mínima.
+
             $table->timestamps();
         });
     }
