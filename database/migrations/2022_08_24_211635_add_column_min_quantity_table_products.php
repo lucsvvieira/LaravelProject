@@ -32,5 +32,5 @@ return new class extends Migration
         Schema::table('products', function(Blueprint $table) {
             $table->dropColumn('min_quantity');
         });
-    }
+    } 
 };

@@ -29,7 +29,7 @@ return new class extends Migration
             // Observações sobre o produto - text - pode ser nulo (obs)
             $table->text('obs')->nullable();
 
-            // Adicionar o campo quantidade mínima.
+            // Adicionar o campo quantidade mínima na tabela produtos.
 
             $table->timestamps();
         });
